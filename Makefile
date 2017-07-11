@@ -1,5 +1,5 @@
-install:
-	composer install
+#install:
+#	composer install
 	
 update:
 	composer update
