@@ -1,3 +1,6 @@
-#!/bin/php
+#!/usr/bin/env php
 <?php
-echo "Welcome to the Brain Games!\n";
+require_once '/home/melsior/projects/project-lvl1-s136/vendor/autoload.php';
+
+use BrainGames\run;
+BrainGames\run();
