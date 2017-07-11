@@ -1,2 +1,2 @@
 # project-lvl1-s136
-https://codeclimate.com/repos/596506a24a445502660001f0/badges
+[![Code Climate](https://codeclimate.com/github/melsior/project-lvl1-s136/badges/gpa.svg)]
