@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "91c9d2db365c6ebdd934ac0402125e28",
     "content-hash": "2ca04225a6c8890c4c71f84d164277d0",
     "packages": [
         {
@@ -107,7 +108,11 @@
                 "phpcs",
                 "standards"
             ],
+<<<<<<< HEAD
             "time": "2017-07-11T22:52:58+00:00"
+=======
+            "time": "2017-07-11 22:52:58"
+>>>>>>> 0567143a9d31ea123ff9693bae81128c6a02492d
         }
     ],
     "aliases": [],
