@@ -36,11 +36,12 @@ function runEvenGame()
     line('Answer "yes" if number even otherwise answer "no".');
     line();
     $name = \cli\prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line();
     for ($i = 0; $i < 3; $i++) {
         $number = getRand();
         line('Question: %s', $number);
-        $answer = \cli\prompt('Your answer: ');
+        $answer = \cli\prompt('Your answer');
         if ($answer !== getRightAnswer($number)) {
             $message = '\'%s\' is wrong answer ;(. Correct answer was \'%s\'.';
             line($message, $answer, getRightAnswer($number));
@@ -49,5 +50,5 @@ function runEvenGame()
         }
         line('Correct!');
     }
-    line('Congratulation, %s!', $name);
+    line('Congratulations, %s!', $name);
 }
