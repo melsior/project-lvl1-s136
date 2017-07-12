@@ -1,6 +1,9 @@
 {
     "name": "melsior/brain-games",
-    "bin": ["bin/brain-games"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
     "description": "A training project in the hexlet.io team that develop small brain games for the console",
     "authors": [{
         "name": "Alexander Vasilyev",
