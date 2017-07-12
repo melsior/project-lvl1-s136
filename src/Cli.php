@@ -12,7 +12,7 @@
  **/
 namespace BrainGames;
 
-use function \cli\line;
+use \cli\line;
 
 /**
  * This function for output user greetin in console.
