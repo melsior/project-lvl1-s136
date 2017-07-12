@@ -45,9 +45,8 @@ function runEvenGame()
             line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'.', $answer, getRightAnswer($number));
             line('Let\'s try again, %s!', $name);
             exit;
-        } else {
-            line('Correct!');
         }
+        line('Correct!');
     }
     line('Congratulation, %s!', $name);
 }
