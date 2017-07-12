@@ -9,7 +9,6 @@
         "name": "Alexander Vasilyev",
         "email": "melsior@gmail.com"
     }],
-    "minimum-stability": "dev",
     "scripts": {
         "phpcs": "phpcs"
     },
