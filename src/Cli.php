@@ -12,7 +12,7 @@
  **/
 namespace BrainGames;
 
-use \cli\line;
+use function \cli\line;
 
 /**
  * This function for output user greetin in console.
@@ -42,7 +42,8 @@ function runEvenGame()
         line('Question: %s', $number);
         $answer = \cli\prompt('Your answer: ');
         if ($answer !== getRightAnswer($number)) {
-            line('\'%s\' is wrong answer ;(. Correct answer was \'%s\'.', $answer, getRightAnswer($number));
+            $message = '\'%s\' is wrong answer ;(. Correct answer was \'%s\'.';
+            line($message, $answer, getRightAnswer($number));
             line('Let\'s try again, %s!', $name);
             exit;
         }
