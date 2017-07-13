@@ -7,5 +7,3 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use BrainEven\runEvenGame;
-BrainEven\runEvenGame();

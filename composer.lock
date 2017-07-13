@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "91c9d2db365c6ebdd934ac0402125e28",
-    "content-hash": "2ca04225a6c8890c4c71f84d164277d0",
+    "content-hash": "16ffdf02b1a725d9c4f3b97837a8f67e",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
@@ -65,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "5fd3d107940b311b8864819f80e0a9d2f8be1994"
+                "reference": "6f42a49bbd927e4079e461aac806a671d6db5b22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5fd3d107940b311b8864819f80e0a9d2f8be1994",
-                "reference": "5fd3d107940b311b8864819f80e0a9d2f8be1994",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6f42a49bbd927e4079e461aac806a671d6db5b22",
+                "reference": "6f42a49bbd927e4079e461aac806a671d6db5b22",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +107,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-07-11T22:52:58+00:00"
+            "time": "2017-07-13 00:22:15"
         }
     ],
     "aliases": [],

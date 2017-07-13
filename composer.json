@@ -2,7 +2,8 @@
     "name": "melsior/brain-games",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "description": "A training project in the hexlet.io team that develop small brain games for the console",
     "authors": [{
@@ -16,9 +17,15 @@
     },
     "autoload": {
         "psr-4": {
-            "BrainGames\\": "src/"
+            "BrainGames\\": "src/games/",
+            "BrainEven\\": "src/games/",
+            "BrainCalc\\": "src/games/",
+            "GameLib\\": "src/"
         },
-        "files": ["src/Cli.php",
+        "files": [
+            "src/games/BrainGames.php",
+            "src/games/BrainEven.php",
+            "src/games/BrainCalc.php",
             "src/GameLib.php"
         ]
     },
