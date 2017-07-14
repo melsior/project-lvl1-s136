@@ -10,14 +10,12 @@ function isEven($number)
 function runEvenGame()
 {
     $getTask = function () {
-        return rand(1, 100);
+        $number = rand(1, 100);
+        return $number;
     };
     $getRightAnswer = function ($number) {
         return (isEven($number)) ? 'yes' : 'no';
     };
-    \CliMessage\printGreeting(MESSAGE);
-    $name = \CliMessage\askUserName();
-    \CliMessage\printHelloUser($name);
-    $count = 3;
-    \GameLib\runGame($getTask, $getRightAnswer, $count, $name);
+    
+    \GameLib\runGame($getTask, $getRightAnswer);
 }

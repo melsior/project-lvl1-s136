@@ -20,7 +20,7 @@ function printHelloUser($user)
 }
 function printTask($message)
 {
-    line('Question: %s', $message);
+    line('Question: %s', implode(' ', $message));
 }
 function getAnswer()
 {
