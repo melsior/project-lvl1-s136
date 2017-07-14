@@ -28,6 +28,7 @@ function runGame($message, $getTask, $getRightAnswer)
     }
     if ($isQuitGame) {
         \CliMessage\printLoseMessage($name);
+    } else {
+        \CliMessage\printWinMessage($name);
     }
-    \CliMessage\printWinMessage($name);
 }
