@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "description": "A training project in the hexlet.io team that develop small brain games for the console",
     "authors": [{
@@ -20,6 +21,7 @@
             "BrainGames\\": "src/games/",
             "BrainEven\\": "src/games/",
             "BrainCalc\\": "src/games/",
+            "BrainGcd\\": "src/games/",
             "GameLib\\": "src/",
             "CliMessage\\": "src/"
         },
@@ -27,6 +29,7 @@
             "src/games/BrainGames.php",
             "src/games/BrainEven.php",
             "src/games/BrainCalc.php",
+            "src/games/BrainGcd.php",
             "src/GameLib.php",
             "src/CliMessage.php"
         ]

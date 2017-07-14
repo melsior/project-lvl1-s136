@@ -1,13 +1,7 @@
 <?php
 namespace BrainCalc;
 
-use function \cli\line;
-
 const MESSAGE = 'What is the result of the expression?';
-function getNumber()
-{
-    return rand(1, 10);
-}
 function getOperator()
 {
     $num = rand(0, 2);
@@ -43,8 +37,8 @@ function runCalcGame()
 {
     $getTask = function () {
         $operator = getOperator();
-        $number1 = getNumber();
-        $number2 = getNumber();
+        $number1 = \GameLib\getNumber();
+        $number2 = \GameLib\getNumber();
         return [$number1, $operator, $number2];
     };
     $getRightAnswer = function ($expression) {

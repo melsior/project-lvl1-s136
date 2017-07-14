@@ -2,6 +2,11 @@
 
 namespace GameLib;
 
+function getNumber()
+{
+    return rand(1, 100);
+}
+
 function runGame($message, $getTask, $getRightAnswer)
 {
     \CliMessage\printGreeting($message);
@@ -13,7 +18,6 @@ function runGame($message, $getTask, $getRightAnswer)
         $gameTask = $getTask();
         \CliMessage\printTask($gameTask);
         $answer = \CliMessage\getAnswer();
-        //var_dump($answer);
         $rightAnswer = $getRightAnswer($gameTask);
         if ($answer != $rightAnswer) {
             \CliMessage\printRightAnswer($answer, $rightAnswer);
