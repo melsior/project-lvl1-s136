@@ -13,9 +13,9 @@ function askUserName()
 {
     return \cli\prompt('May I have your name?');
 }
-function printHelloUser($user)
+function printHelloUser($name)
 {
-    line("Hello, %s!", $user);
+    line("Hello, %s!", $name);
     line();
 }
 function printTask($message)
@@ -35,11 +35,19 @@ function printRightAnswer($wrongAnswer, $rightAnswer)
     $message = "'%s' is wrong answer ;(. Correct answer was '%s'.";
     line($message, $wrongAnswer, $rightAnswer);
 }
-function printLoseMessage($user)
+function printLoseMessage($name)
 {
-    line("Let's try again, %s!", $user);
+    line("Let's try again, %s!", $name);
 }
-function printWinMessage($user)
+function printWinMessage($name)
 {
-    line("Congratulations %s!", $user);
+    line("Congratulations %s!", $name);
+}
+function printQuitGame($isQuit, $name)
+{
+    if ($isQuit) {
+        \CliMessage\printLoseMessage($name);
+    } else {
+        \CliMessage\printWinMessage($name);
+    }
 }

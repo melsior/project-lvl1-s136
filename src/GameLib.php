@@ -12,7 +12,7 @@ function runGame($message, $getTask, $getRightAnswer)
     \CliMessage\printGreeting($message);
     $name = \CliMessage\askUserName();
     \CliMessage\printHelloUser($name);
-    $isQuitGame = false;
+    $isQuit = false;
     $count = 3;
     for ($i = 0; $i < $count; $i++) {
         $gameTask = $getTask();
@@ -21,14 +21,10 @@ function runGame($message, $getTask, $getRightAnswer)
         $rightAnswer = $getRightAnswer($gameTask);
         if ($answer != $rightAnswer) {
             \CliMessage\printRightAnswer($answer, $rightAnswer);
-            $isQuitGame = true;
+            $isQuit = true;
             break;
         }
         \CliMessage\printCorrect();
     }
-    if ($isQuitGame) {
-        \CliMessage\printLoseMessage($name);
-    } else {
-        \CliMessage\printWinMessage($name);
-    }
+    \CliMessage\printQuitGame($isQuit, $name);
 }
