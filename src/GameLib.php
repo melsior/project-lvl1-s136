@@ -13,7 +13,7 @@ function runGame($message, $getTask, $getRightAnswer)
         $gameTask = $getTask();
         \CliMessage\printTask($gameTask);
         $answer = \CliMessage\getAnswer();
-        var_dump($answer);
+        //var_dump($answer);
         $rightAnswer = $getRightAnswer($gameTask);
         if ($answer != $rightAnswer) {
             \CliMessage\printRightAnswer($answer, $rightAnswer);
@@ -24,7 +24,7 @@ function runGame($message, $getTask, $getRightAnswer)
     }
     if ($isQuitGame) {
         \CliMessage\printLoseMessage($name);
-    } else {
-        \CliMessage\printWinMessage($name);
+    }
+    \CliMessage\printWinMessage($name);
     }
 }
