@@ -5,15 +5,5 @@ namespace BrainCalc;
 
 function runGame()
 {
-    greeting($rules);
-
-    
-
-
-
-}
-function replGame()
-{
-    
-    }     
+    return true;
 }

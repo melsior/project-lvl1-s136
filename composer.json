@@ -20,13 +20,15 @@
             "BrainGames\\": "src/games/",
             "BrainEven\\": "src/games/",
             "BrainCalc\\": "src/games/",
-            "GameLib\\": "src/"
+            "GameLib\\": "src/",
+            "CliMessage\\": "src/"
         },
         "files": [
             "src/games/BrainGames.php",
             "src/games/BrainEven.php",
             "src/games/BrainCalc.php",
-            "src/GameLib.php"
+            "src/GameLib.php",
+            "src/CliMessage.php"
         ]
     },
     "require": {

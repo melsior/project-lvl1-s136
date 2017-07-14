@@ -2,22 +2,24 @@
 
 namespace GameLib;
 
-function isEven($number)
+function runGame($getTask, $getRightAnswer, $count, $name)
 {
-    return ($number % 2) == 0;
-}
-
-function getRightAnswer($number)
-{
-    if (\GameLib\isEven($number)) {
-        return 'yes';
+    $isQuitGame = false;
+    for ($i = 0; $i < $count; $i++) {
+        $gameTask = $getTask();
+        \CliMessage\printTask($gameTask);
+        $answer = \CliMessage\getAnswer();
+        $rightAnswer = $getRightAnswer($gameTask);
+        if ($answer !== $rightAnswer) {
+            \CliMessage\printRightAnswer($answer, $rightAnswer);
+            $isQuitGame = true;
+            break;
+        }
+        \CliMessage\printCorrect();
     }
-    return 'no';
-}
-
-function getRand()
-{
-    $min = 1;
-    $max = 100;
-    return rand($min, $max);
+    if ($isQuitGame) {
+        \CliMessage\printLoseMessage($name);
+    } else {
+        \CliMessage\printWinMessage($name);
+    }
 }
