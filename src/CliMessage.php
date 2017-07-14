@@ -24,7 +24,7 @@ function printTask($message)
 }
 function getAnswer()
 {
-    return \cli\prompt('Your answer', $default='0');
+    return \cli\prompt('Your answer', '0');
 }
 function printCorrect()
 {
