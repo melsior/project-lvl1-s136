@@ -1,10 +1,19 @@
 <?php
 namespace BrainCalc;
 
-use function \cli\line;
+//use function \cli\line;
 
-function runCalcGame()
+function runGame()
 {
-    greeting();
+    greeting($rules);
 
+    
+
+
+
+}
+function replGame()
+{
+    
+    }     
 }
