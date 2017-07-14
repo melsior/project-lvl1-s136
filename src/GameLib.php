@@ -26,5 +26,4 @@ function runGame($message, $getTask, $getRightAnswer)
         \CliMessage\printLoseMessage($name);
     }
     \CliMessage\printWinMessage($name);
-    }
 }
