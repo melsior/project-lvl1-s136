@@ -10,12 +10,12 @@ function isEven($number)
 function runEvenGame()
 {
     $getTask = function () {
-        $number = rand(1, 100);
-        return $number;
+        $number1 = \GameLib\getNumber();
+        return [$number1];
     };
-    $getRightAnswer = function ($number) {
-        return (isEven($number)) ? 'yes' : 'no';
+    $getRightAnswer = function ($numbers) {
+        return (isEven($numbers[0])) ? 'yes' : 'no';
     };
     
-    \GameLib\runGame($getTask, $getRightAnswer);
+    \GameLib\runGame(MESSAGE, $getTask, $getRightAnswer);
 }
