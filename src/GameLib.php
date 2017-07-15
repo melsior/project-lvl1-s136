@@ -2,9 +2,9 @@
 
 namespace GameLib;
 
-function getNumber()
+function getNumber($minNumber, $maxNumber)
 {
-    return rand(1, 100);
+    return rand($minNumber, $maxNumber);
 }
 
 function runGame($message, $getTask, $getRightAnswer)

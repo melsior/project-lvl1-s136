@@ -10,7 +10,9 @@ function isEven($number)
 function runEvenGame()
 {
     $getTask = function () {
-        $number1 = \GameLib\getNumber();
+        $minNumber = 1;
+        $maxNumber = 100;
+        $number1 = \GameLib\getNumber($minNumber, $maxNumber);
         return [$number1];
     };
     $getRightAnswer = function ($numbers) {

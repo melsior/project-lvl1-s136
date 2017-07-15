@@ -36,9 +36,11 @@ function calcOperator($num1, $operator, $num2)
 function runCalcGame()
 {
     $getTask = function () {
+        $minNumber = 1;
+        $maxNumber = 10;
         $operator = getOperator();
-        $number1 = \GameLib\getNumber();
-        $number2 = \GameLib\getNumber();
+        $number1 = \GameLib\getNumber($minNumber, $maxNumber);
+        $number2 = \GameLib\getNumber($minNumber, $maxNumber);
         return [$number1, $operator, $number2];
     };
     $getRightAnswer = function ($expression) {
