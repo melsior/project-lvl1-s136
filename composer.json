@@ -1,6 +1,7 @@
 {
     "name": "melsior/brain-games",
     "bin": [
+        "bin/brain-balanced",
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
