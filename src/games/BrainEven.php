@@ -12,8 +12,8 @@ function runEvenGame()
     $getTask = function () {
         $minNumber = 1;
         $maxNumber = 100;
-        $number1 = \GameLib\getNumber($minNumber, $maxNumber);
-        return [$number1];
+        $number = \GameLib\getNumber($minNumber, $maxNumber);
+        return [$number];
     };
     $getRightAnswer = function ($numbers) {
         return (isEven($numbers[0])) ? 'yes' : 'no';

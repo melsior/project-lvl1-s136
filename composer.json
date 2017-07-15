@@ -1,6 +1,7 @@
 {
     "name": "melsior/brain-games",
     "bin": [
+        "bin/brain-prime",
         "bin/brain-progression",
         "bin/brain-balance",
         "bin/brain-games",
@@ -26,6 +27,7 @@
             "BrainGcd\\": "src/games/",
             "BrainBalance\\": "src/games/",
             "BrainProgression\\": "src/games/",
+            "BrainPrime\\": "src/games/",
             "GameLib\\": "src/",
             "CliMessage\\": "src/"
         },
@@ -36,6 +38,7 @@
             "src/games/BrainGcd.php",
             "src/games/BrainBalance.php",
             "src/games/BrainProgression.php",
+            "src/games/BrainPrime.php",
             "src/GameLib.php",
             "src/CliMessage.php"
         ]
